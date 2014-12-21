@@ -1,0 +1,22 @@
+[user]
+  name = Ken Schultz
+  email = schultzy51@gmail.com
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[github]
+  user = schultzy51
+
+[push]
+  default = current
+
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    st = status
