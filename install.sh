@@ -9,6 +9,7 @@ FILES="
   bash_profile
   gitconfig
   gitignore
+  oh-my-zsh
   zshrc
 "
 BACKUP_DIR=backup-$(date +"%Y%m%d_%H%M%S")
