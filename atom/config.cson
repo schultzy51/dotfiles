@@ -1,8 +1,7 @@
 'global':
-  'editor':
-    'invisibles': {}
-  'core': {}
-  'exception-reporting':
-    'userId': 'cabe8d3b-18e2-4303-4013-9ee2f37fa86b'
   'welcome':
     'showOnStartup': false
+  'core': {}
+  'editor':
+    'invisibles': {}
+    'fontSize': 10
