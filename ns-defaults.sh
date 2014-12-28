@@ -20,6 +20,9 @@ defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Menu bar: show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -104,6 +107,10 @@ defaults write com.apple.dock showhidden -bool true
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+# Change the default profile
+defaults write com.apple.terminal "Default Window Settings" -string "Pro"
+defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
 
 ###############################################################################
 # Time Machine                                                                #
