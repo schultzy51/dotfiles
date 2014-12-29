@@ -11,6 +11,7 @@ FILES="
   gitconfig
   gitignore
   oh-my-zsh
+  tmux.conf
   zshrc
 "
 BACKUP_DIR=backup-$(date +"%Y%m%d_%H%M%S")

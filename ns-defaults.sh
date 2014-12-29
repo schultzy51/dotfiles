@@ -49,6 +49,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
+# Disable showing displays in menu bar
+defaults write com.apple.airplay showInMenuBarIfPresent -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -111,6 +114,9 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Change the default profile
 defaults write com.apple.terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
+
+# TODO: figure out how to set the font from Monaco 12 to Monaco 10
+# It's an embedded structure, so defaults alone won't work
 
 ###############################################################################
 # Time Machine                                                                #
