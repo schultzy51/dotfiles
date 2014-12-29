@@ -1,4 +1,4 @@
-source $HOME/.profile
+#source $HOME/.profile
 
 #terminal and ls coloring
 

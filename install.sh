@@ -6,9 +6,13 @@
 
 CURRENT_DIRECTORY="$( cd "$( dirname "$0" )" && pwd )"
 FILES="
+  atom
   bash_profile
   gitconfig
   gitignore
+  oh-my-zsh
+  tmux.conf
+  zshrc
 "
 BACKUP_DIR=backup-$(date +"%Y%m%d_%H%M%S")
 
@@ -34,17 +38,3 @@ do
   fi;
 
 done
-
-# copy profile.local instead of symlinking
-# so that we can keep local changes out of git
-echo "Processing profile.local, special case"
-
-FROM=$CURRENT_DIRECTORY/profile.local
-TO=$HOME/.profile.local
-
-if [[ -e $TO ]]; then
-  echo -e "\t$TO already exists, no action."
-else
-  echo -e "\tCopying - $FROM $TO"
-  cp $FROM $TO
-fi
