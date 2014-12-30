@@ -183,6 +183,21 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
 ###############################################################################
+# HipChat.app                                                                 #
+###############################################################################
+
+defaults write com.hipchat.HipChat timeToIdleInMinutes 3
+
+# /Applications/HipChat.app/Contents/Resources
+# TODO: update hipchat font size
+
+###############################################################################
+# Intellij.app                                                                #
+###############################################################################
+
+# TODO: Intellij
+
+###############################################################################
 # Other                                                                       #
 ###############################################################################
 
