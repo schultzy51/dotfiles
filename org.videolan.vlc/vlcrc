@@ -1753,10 +1753,10 @@
 #macosx-fspanel=1
 
 # Resize interface to the native video size (boolean)
-#macosx-video-autoresize=1
+macosx-video-autoresize=0
 
 # Pause the video playback when minimized (boolean)
-#macosx-pause-minimized=0
+macosx-pause-minimized=1
 
 # Lock Aspect Ratio (boolean)
 #macosx-lock-aspect-ratio=1
@@ -4056,4 +4056,3 @@ control=(null)
 
 # Playlist bookmark 10 (string)
 #bookmark10=
-

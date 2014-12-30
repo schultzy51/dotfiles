@@ -18,6 +18,8 @@ install intellij
 
 install jdk
 
+install vlc
+
 install dash
 
 Add /usr/local/bin/zsh to /etc/shells
