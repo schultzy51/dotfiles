@@ -10,6 +10,8 @@
 # Ask for the administrator password upfront
 sudo -v
 
+hardware_uuid=$(system_profiler SPHardwareDataType | awk '/UUID/ { print $3; }')
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -147,6 +149,40 @@ defaults write com.apple.dock largesize -int 64
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
+# Hot corners
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+# Top right screen corner → no-op
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-tr-modifier -int 0
+# Top left screen corner → no-op
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Start screen saver
+defaults write com.apple.dock wvous-tr-corner -int 5
+defaults write com.apple.dock wvous-tr-modifier -int 0
+# Bottom left screen corner → no-op
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# Displays have separate Spaces
+defaults write com.apple.spaces spans-displays -bool true
+
+/usr/libexec/PlistBuddy -c "Delete :moduleDict" ~/Library/Preferences/ByHost/com.apple.screensaver.${hardware_uuid}.plist
+/usr/libexec/PlistBuddy -c "Add :moduleDict dict" ~/Library/Preferences/ByHost/com.apple.screensaver.${hardware_uuid}.plist
+/usr/libexec/PlistBuddy -c "Add :moduleDict:moduleName  string Flurry" ~/Library/Preferences/ByHost/com.apple.screensaver.${hardware_uuid}.plist
+/usr/libexec/PlistBuddy -c "Add :moduleDict:path string /System/Library/Screen Savers/Flurry.saver" ~/Library/Preferences/ByHost/com.apple.screensaver.${hardware_uuid}.plist
+/usr/libexec/PlistBuddy -c "Add :moduleDict:type integer 0" ~/Library/Preferences/ByHost/com.apple.screensaver.${hardware_uuid}.plist
+
 ###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
@@ -181,6 +217,27 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 
 # Don’t show the preferences window on next start
 defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
+
+###############################################################################
+# HipChat.app                                                                 #
+###############################################################################
+
+defaults write com.hipchat.HipChat timeToIdleInMinutes 3
+
+# /Applications/HipChat.app/Contents/Resources
+# TODO: update hipchat font size
+
+###############################################################################
+# Intellij.app                                                                #
+###############################################################################
+
+# TODO: Intellij
+
+###############################################################################
+# VLC                                                                         #
+###############################################################################
+
+# TODOL VLC
 
 ###############################################################################
 # Other                                                                       #

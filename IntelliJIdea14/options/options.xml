@@ -1,0 +1,20 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="log.debug.categories" value="" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="1" />
+    <property name="installation.uid" value="e125b3a4-9403-4748-8ec1-d5d290716f7e" />
+    <property name="default.storage.format" value=".idea (directory based)" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Workspace/repos/github/schultzy51/cah_san_boot/build.gradle&#10;/Users/kschultz/Workspace/repos/stash/grub/hotpocket/build.gradle" />
+    <property name="last.imported.location" value="$USER_HOME$/Workspace/repos/github/schultzy51/cah_san_boot/build.gradle" />
+    <property name="SingleInspectionProfilePanel.VERTICAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="SingleInspectionProfilePanel.HORIZONTAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="lastNotifiedMaintenanceExpiring" value="1419906462306" />
+  </component>
+</application>

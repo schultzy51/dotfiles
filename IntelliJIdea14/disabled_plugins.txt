@@ -1,0 +1,6 @@
+CloudFoundry
+Heroku
+DevKit
+OpenShift
+com.intellij.uiDesigner
+CloudBees
