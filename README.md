@@ -28,4 +28,4 @@ chsh -s /usr/local/bin/zsh
 
 terminal and iterm2 should start tmux
 
-link intellij, hipchat and vlc
+link intellij, hipchat and vlc, backgrounds
