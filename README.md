@@ -27,3 +27,5 @@ Add /usr/local/bin/zsh to /etc/shells
 chsh -s /usr/local/bin/zsh
 
 terminal and iterm2 should start tmux
+
+link intellij, hipchat and vlc
