@@ -2,6 +2,8 @@ install xcode
 
 install homebrew
 
+install xquartz
+
 install chrome
 
 install atom
@@ -21,6 +23,10 @@ install jdk
 install vlc
 
 install dash
+
+install vagrant
+
+install virtualbox
 
 Add /usr/local/bin/zsh to /etc/shells
 
