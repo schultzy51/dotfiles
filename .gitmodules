@@ -4,3 +4,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "xkpasswd.pm"]
+	path = xkpasswd.pm
+	url = git@github.com:bbusschots/xkpasswd.pm.git
