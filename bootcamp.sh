@@ -8,6 +8,9 @@
 #install BitTorrent Sync
 #install SizeUp
 
+# Ask for the administrator password upfront
+sudo -v
+
 echo "Updating Mac OS X."
 softwareupdate --install --all
 
@@ -30,6 +33,9 @@ brew install \
   reattach-to-user-namespace \
   gibo \
   ansible
+
+# Install gem packages.  Is it bad to install every time?
+sudo gem install tmuxinator
 
 if [ -e /Volumes/Workspace ]
 then
