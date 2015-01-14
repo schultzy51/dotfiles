@@ -56,10 +56,10 @@ then
   if test ! $(which tmuxinator)
   then
     echo "  Installing gems"
-    sudo gem install tmuxinator
+    gem install tmuxinator
   else
     echo "  Updating gems"
-    sudo gem update
+    gem update
   fi
 
   if [ -e /Volumes/Workspace ]
