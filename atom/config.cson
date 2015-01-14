@@ -1,7 +1,5 @@
 'global':
   'welcome':
     'showOnStartup': false
-  'core': {}
   'editor':
-    'invisibles': {}
     'fontSize': 10
