@@ -27,7 +27,9 @@ brew install \
   git \
   tree \
   zsh \
-  reattach-to-user-namespace
+  reattach-to-user-namespace \
+  gibo \
+  ansible
 
 if [ -e /Volumes/Workspace ]
 then
