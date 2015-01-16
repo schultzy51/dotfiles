@@ -1,13 +1,5 @@
 #!/bin/sh
 
-#install Xcode
-#install Google Chrome
-#install Hipchat
-#install Big IP Edge Client (f5)
-#install Atom
-#install BitTorrent Sync
-#install SizeUp
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -42,7 +34,8 @@ then
     gibo \
     ansible \
     meld \
-    packer
+    packer \
+    maven
 
   echo "brew update"
   brew update

@@ -17,6 +17,8 @@ install sizeup
 install iterm2
 
 install intellij
+  and lombok plugin
+  and enable annotation processing
 
 install jdk
 

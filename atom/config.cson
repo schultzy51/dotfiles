@@ -1,5 +1,9 @@
-'global':
-  'welcome':
-    'showOnStartup': false
-  'editor':
-    'fontSize': 10
+"*":
+  welcome:
+    showOnStartup: false
+  editor:
+    fontSize: 10
+    showInvisibles: true
+    showIndentGuide: true
+    invisibles: {}
+  core: {}
