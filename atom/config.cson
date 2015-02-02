@@ -6,4 +6,5 @@
     showInvisibles: true
     showIndentGuide: true
     invisibles: {}
-  core: {}
+  core:
+    audioBeep: false
