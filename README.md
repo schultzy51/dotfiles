@@ -8,8 +8,6 @@ install chrome
 
 install atom
 
-install btsync
-
 install keepassx
 
 install sizeup
@@ -36,4 +34,4 @@ chsh -s /usr/local/bin/zsh
 
 terminal and iterm2 should start tmux
 
-link intellij, hipchat and vlc, backgrounds
+link intellij and vlc, backgrounds
