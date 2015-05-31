@@ -5,6 +5,7 @@
     fontSize: 10
     showInvisibles: true
     showIndentGuide: true
-    invisibles: {}
+    invisibles:
+      {}
   core:
     audioBeep: false

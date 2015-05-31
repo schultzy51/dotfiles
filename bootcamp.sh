@@ -36,7 +36,8 @@ then
     meld \
     packer \
     maven \
-    mono
+    mono \
+    tmux
 
   echo "brew update"
   brew update
@@ -50,10 +51,10 @@ then
   # if test ! $(which tmuxinator)
   # then
   #   echo "  Installing gems"
-  #   gem install tmuxinator
+  #   sudo gem install tmuxinator
   # else
   #   echo "  Updating gems"
-  #   gem update
+  #   sudo gem update
   # fi
 
   if [ -e /Volumes/Workspace ]

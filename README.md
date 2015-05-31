@@ -1,3 +1,7 @@
+git submodule init
+
+git submodule update
+
 install xcode
 
 install homebrew
