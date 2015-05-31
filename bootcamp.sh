@@ -35,25 +35,27 @@ then
     ansible \
     meld \
     packer \
-    maven
+    maven \
+    mono \
+    tmux
 
   echo "brew update"
   brew update
 
-  echo "brew upgrade"
+  echo "brew upgrade --all"
   brew upgrade
 
   echo "brew cleanup"
   brew cleanup
 
-  if test ! $(which tmuxinator)
-  then
-    echo "  Installing gems"
-    gem install tmuxinator
-  else
-    echo "  Updating gems"
-    gem update
-  fi
+  # if test ! $(which tmuxinator)
+  # then
+  #   echo "  Installing gems"
+  #   sudo gem install tmuxinator
+  # else
+  #   echo "  Updating gems"
+  #   sudo gem update
+  # fi
 
   if [ -e /Volumes/Workspace ]
   then
@@ -61,7 +63,6 @@ then
     then
       ln -s /Volumes/Workspace ~/Workspace
       mkdir -p ~/Workspace/repos/github/schultzy51
-      mkdir -p ~/Workspace/btsync/backup
     fi
   fi
 

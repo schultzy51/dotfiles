@@ -1,3 +1,7 @@
+git submodule init
+
+git submodule update
+
 install xcode
 
 install homebrew
@@ -7,8 +11,6 @@ install xquartz
 install chrome
 
 install atom
-
-install btsync
 
 install keepassx
 
@@ -36,4 +38,4 @@ chsh -s /usr/local/bin/zsh
 
 terminal and iterm2 should start tmux
 
-link intellij, hipchat and vlc, backgrounds
+link intellij and vlc, backgrounds
