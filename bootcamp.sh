@@ -37,7 +37,11 @@ then
     packer \
     maven \
     mono \
-    tmux
+    tmux \
+    docker \
+    docker-machine \
+    docker-swarm \
+    docker-compose
 
   echo "brew update"
   brew update
