@@ -13,6 +13,8 @@ FILES="
   oh-my-zsh
   tmux.conf
   tmuxinator
+  vim
+  vimrc
   zshrc
 "
 BACKUP_DIR=backup-$(date +"%Y%m%d_%H%M%S")
