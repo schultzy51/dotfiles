@@ -2,4 +2,4 @@
 ; modifications will be lost the next time any apm command is run.
 ;
 ; You should instead edit your .apmrc config located in ~/.atom/.apmrc
-cache = /Users/ken/Workspace/repos/github/schultzy51/dotfiles/atom/.apm
+cache = /Volumes/Workspace/repos/github/schultzy51/dotfiles/atom/.apm
