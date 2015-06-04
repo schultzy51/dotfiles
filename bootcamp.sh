@@ -8,9 +8,9 @@ then
   xcode-select --install
 fi
 
-if [ ! $(which java) ]
+if [ ! $(which javac) ]
 then
-  echo "Install Java"
+  echo "Install Java JDK"
   exit
 fi
 
