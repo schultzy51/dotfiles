@@ -79,8 +79,9 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias giboconfig="gibo C++ C Gradle Java Node Packer Perl Python Rails Ruby Eclipse JetBrains Linux OSX Redis SublimeText Vagrant Vim > .gitignore"
 
 # Fix issue where git autocompletion takes forever and eats cpu.
 # See http://superuser.com/questions/458906/zsh-tab-completion-of-git-commands-is-very-slow-how-can-i-turn-it-off

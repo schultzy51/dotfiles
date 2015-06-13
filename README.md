@@ -1,36 +1,16 @@
-git submodule init
-
-git submodule update
-
 install xcode
 
-install homebrew
+install jdk
 
-install xquartz
+install iterm2
 
 install chrome
 
-install atom
-
-install keepassx
-
-install sizeup
-
-install iterm2
+install dash
 
 install intellij
   and lombok plugin
   and enable annotation processing
-
-install jdk
-
-install vlc
-
-install dash
-
-install vagrant
-
-install virtualbox
 
 Add /usr/local/bin/zsh to /etc/shells
 

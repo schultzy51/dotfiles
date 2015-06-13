@@ -3,13 +3,24 @@
 # Ask for the administrator password upfront
 sudo -v
 
+if [ ! $(xcode-select -p) ]
+then
+  xcode-select --install
+fi
+
+if [ ! $(which javac) ]
+then
+  echo "Install Java JDK"
+  exit
+fi
+
 if [ "$(uname -s)" == "Darwin" ]
 then
   echo "Updating Mac OS X."
   softwareupdate --install --all
 
   # Check for Homebrew
-  if test ! $(which brew)
+  if [ ! $(which brew) ]
   then
     echo "  Installing Homebrew for you."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -41,7 +52,19 @@ then
     docker \
     docker-machine \
     docker-swarm \
-    docker-compose
+    docker-compose \
+    ansible \
+    caskroom/cask/brew-cask
+
+  # Install homebrew casks
+  # brew cask install \
+    # virtualbox \
+    # vagrant \
+    # xquartz \
+    # keepassx \
+    # sizeup \
+    # vlc \
+    # atom
 
   echo "brew update"
   brew update
@@ -52,14 +75,14 @@ then
   echo "brew cleanup"
   brew cleanup
 
-  # if test ! $(which tmuxinator)
-  # then
-  #   echo "  Installing gems"
-  #   sudo gem install tmuxinator
-  # else
-  #   echo "  Updating gems"
-  #   sudo gem update
-  # fi
+  if [ ! $(which tmuxinator) ]
+  then
+    echo "Installing gems"
+    sudo gem install tmuxinator
+  else
+    echo "Updating gems"
+    sudo gem update
+  fi
 
   if [ -e /Volumes/Workspace ]
   then

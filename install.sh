@@ -19,6 +19,9 @@ FILES="
 "
 BACKUP_DIR=backup-$(date +"%Y%m%d_%H%M%S")
 
+echo "Initialize git submodules"
+git submodule update --init
+
 echo "Linking dotfiles in $HOME/"
 for file in $FILES
 do
@@ -27,13 +30,13 @@ do
   TO=$HOME/.$file
 
   # backup existing files
-  if [[ -e $TO && ! -h $TO ]]; then
+  if [ -e $TO -a ! -h $TO ]; then
     echo -e "\t$TO exists, moved to $BACKUP_DIR/."
     mkdir -p $BACKUP_DIR
     mv $TO $BACKUP_DIR/
   fi;
 
-  if [[ -h $TO ]]; then
+  if [ -h $TO ]; then
     echo -e "\t$TO exists, as a symlink, no action."
   else
     echo -e "\tLink added - $FROM -> $TO"
