@@ -2,12 +2,6 @@ install xcode
 
 install jdk
 
-install iterm2
-
-install chrome
-
-install dash
-
 install intellij
   and lombok plugin
   and enable annotation processing
