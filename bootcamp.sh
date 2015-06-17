@@ -61,10 +61,18 @@ then
     # virtualbox \
     # vagrant \
     # xquartz \
+    # iterm2 \
     # keepassx \
     # sizeup \
     # vlc \
-    # atom
+    # atom \
+    # limechat \
+    # slack \
+    # steam \
+    # atom \
+    # dash \
+    # google-chrome \
+    # chromecast
 
   echo "brew update"
   brew update
@@ -75,6 +83,7 @@ then
   echo "brew cleanup"
   brew cleanup
 
+  # TODO: install rvm or rbenv and remove sudo
   if [ ! $(which tmuxinator) ]
   then
     echo "Installing gems"
