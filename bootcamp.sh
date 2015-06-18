@@ -36,43 +36,50 @@ then
   # Install homebrew packages
   echo "brew install"
   brew install \
-    wget \
-    gradle \
-    git \
-    tree \
-    zsh \
-    reattach-to-user-namespace \
-    gibo \
     ansible \
-    meld \
-    packer \
-    maven \
-    mono \
-    tmux \
     docker \
+    docker-compose \
     docker-machine \
     docker-swarm \
-    docker-compose \
-    ansible \
+    gibo \
+    git \
+    gradle \
+    maven \
+    mono \
+    packer \
+    reattach-to-user-namespace \
+    tmux \
+    tree \
+    zsh \
+    wget \
     caskroom/cask/brew-cask
 
   # Install homebrew casks
-  # brew cask install \
-    # virtualbox \
-    # vagrant \
-    # xquartz \
-    # iterm2 \
-    # keepassx \
-    # sizeup \
-    # vlc \
-    # atom \
-    # limechat \
-    # slack \
-    # steam \
-    # atom \
-    # dash \
-    # google-chrome \
-    # chromecast
+  echo "brew cask install"
+  brew cask install \
+    atom \
+    chromecast \
+    dash \
+    flux \
+    google-chrome \
+    intellij-idea-ce \
+    iterm2 \
+    keepassx \
+    limechat \
+    origin \
+    sizeup \
+    slack \
+    steam \
+    vagrant \
+    virtualbox \
+    vlc \
+    xquartz
+
+  # Dependencies on brew cask install
+  echo "brew install again"
+  brew install \
+    meld
+
 
   echo "brew update"
   brew update
