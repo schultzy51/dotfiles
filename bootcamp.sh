@@ -60,6 +60,7 @@ then
     atom \
     chromecast \
     dash \
+    firefox \
     flux \
     google-chrome \
     intellij-idea-ce \
@@ -69,6 +70,7 @@ then
     origin \
     sizeup \
     slack \
+    spotify \
     steam \
     vagrant \
     virtualbox \
