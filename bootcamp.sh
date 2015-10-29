@@ -8,12 +8,6 @@ then
   xcode-select --install
 fi
 
-if [ ! $(which javac) ]
-then
-  echo "Install Java JDK"
-  exit
-fi
-
 if [ "$(uname -s)" == "Darwin" ]
 then
   echo "Updating Mac OS X."
@@ -33,6 +27,12 @@ then
   brew tap homebrew/binary
   brew tap homebrew/x11
 
+  brew install \
+    caskroom/cask/brew-cask
+
+  brew cask install \
+    java
+
   # Install homebrew packages
   echo "brew install"
   brew install \
@@ -51,8 +51,7 @@ then
     tmux \
     tree \
     zsh \
-    wget \
-    caskroom/cask/brew-cask
+    wget
 
   # Install homebrew casks
   echo "brew cask install"
@@ -81,7 +80,6 @@ then
   echo "brew install again"
   brew install \
     meld
-
 
   echo "brew update"
   brew update
