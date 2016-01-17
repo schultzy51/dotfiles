@@ -59,19 +59,25 @@ then
   # Install homebrew casks
   echo "brew cask install"
   brew cask install \
+    airvpn \
     atom \
+    bittorrent-sync \
     chromecast \
     dash \
     firefox \
     flux \
     gitter \
     google-chrome \
-    intellij-idea-ce \
+    intellij-idea \
     iterm2 \
     keepassx \
+    keepingyouawake \
     libreoffice \
+    lighttable \
     limechat \
+    openemu \
     origin \
+    qbittorrent \
     sizeup \
     slack \
     spotify \
