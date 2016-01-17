@@ -246,8 +246,8 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 # Bottom right screen corner → Start screen saver
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
-# Bottom left screen corner → no-op
-defaults write com.apple.dock wvous-bl-corner -int 0
+# Bottom left screen corner → Desktop
+defaults write com.apple.dock wvous-bl-corner -int 4
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Displays have separate Spaces

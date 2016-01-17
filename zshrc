@@ -48,11 +48,11 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(atom brew docker git gradle osx pip python tmux vagrant)
+plugins=(atom brew docker gem git gradle osx pip python rvm tmux vagrant)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,9 +82,12 @@ fi
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias giboconfig="gibo C++ C Gradle Java Node Packer Perl Python Rails Ruby Eclipse JetBrains Linux OSX Redis SublimeText Vagrant Vim > .gitignore"
+alias genpass="perl /Users/ken/Workspace/repos/github/schultzy51/dotfiles/genpass.pl"
 
 # Fix issue where git autocompletion takes forever and eats cpu.
 # See http://superuser.com/questions/458906/zsh-tab-completion-of-git-commands-is-very-slow-how-can-i-turn-it-off
 __git_files () {
   _wanted files expl 'local files' _files
 }
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

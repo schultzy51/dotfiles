@@ -9,3 +9,5 @@
       {}
   core:
     audioBeep: false
+  "exception-reporting":
+    userId: "dd9a6429-7c95-6194-87de-303c4729d6e3"
