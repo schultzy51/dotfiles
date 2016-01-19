@@ -120,6 +120,10 @@ then
     fi
   fi
 
+  # Install cpan dependencies
+  echo "install Crypt::HSXKPasswd"
+  cpan Crypt::HSXKPasswd
+
 else
   echo "Unsupported OS! (for now)"
 fi
