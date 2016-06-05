@@ -82,6 +82,7 @@ then
     slack \
     spotify \
     steam \
+    tcl \
     vagrant \
     virtualbox \
     vlc \

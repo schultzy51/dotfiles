@@ -1,4 +1,8 @@
-# Package Sync for Atom [![Build Status](https://travis-ci.org/lee-dohm/package-sync.svg?branch=master)](https://travis-ci.org/lee-dohm/package-sync) [![Dependency Status](https://david-dm.org/lee-dohm/package-sync.svg)](https://david-dm.org/lee-dohm/package-sync)
+# Package Sync for Atom
+[![Build Status](https://travis-ci.org/lee-dohm/package-sync.svg?branch=master)](https://travis-ci.org/lee-dohm/package-sync)
+[![Package Version](https://img.shields.io/apm/v/package-sync.svg)](https://atom.io/packages/package-sync)
+[![Package Downloads](https://img.shields.io/apm/dm/package-sync.svg)](https://atom.io/packages/package-sync)
+[![Dependency Status](https://david-dm.org/lee-dohm/package-sync.svg)](https://david-dm.org/lee-dohm/package-sync)
 
 Synchronizes packages installed between computers by installing the packages listed in a configuration file.
 
@@ -33,6 +37,10 @@ The `packages.cson` file follows the format:
 ```
 
 Where the contents of the array is a list of packages to ensure are installed.
+
+### Configuration
+
+* `forceOverwrite` &mdash; Forces the `create-package-list` command to overwrite the `packages.cson` if it exists
 
 ### Commands
 

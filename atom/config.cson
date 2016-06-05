@@ -1,13 +1,15 @@
 "*":
-  welcome:
-    showOnStartup: false
-  editor:
-    fontSize: 10
-    showInvisibles: true
-    showIndentGuide: true
-    invisibles: {}
   core:
     audioBeep: false
+  editor:
+    fontSize: 10
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "ab1282bc-c3d8-5ac7-a163-838380b08fce"
   react: {}
   "tree-view":
     hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
