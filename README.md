@@ -1,7 +1,5 @@
 install xcode
 
-install jdk (brew cask install java)
-
 install intellij lombok plugin
 enable annotation processing
 
@@ -14,4 +12,4 @@ Add /usr/local/bin/zsh to /etc/shells
 
 terminal and iterm2 should start tmux
 
-link intellij and vlc, backgrounds
+set background

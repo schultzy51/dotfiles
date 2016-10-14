@@ -45,3 +45,5 @@ set -o noclobber
 
 #Treat undefined variables as errors
 set -o nounset
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

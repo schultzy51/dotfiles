@@ -30,9 +30,6 @@ then
   brew tap homebrew/binary
   brew tap homebrew/x11
 
-  brew install \
-    caskroom/cask/brew-cask
-
   brew cask install \
     java
 
@@ -62,7 +59,6 @@ then
     airvpn \
     atom \
     bittorrent-sync \
-    chromecast \
     dash \
     firefox \
     flux \
@@ -82,6 +78,7 @@ then
     slack \
     spotify \
     steam \
+    sync \
     tcl \
     vagrant \
     virtualbox \

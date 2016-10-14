@@ -89,3 +89,5 @@ alias genpass="perl /Users/ken/Workspace/repos/github/schultzy51/dotfiles/genpas
 __git_files () {
   _wanted files expl 'local files' _files
 }
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
