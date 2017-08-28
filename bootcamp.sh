@@ -26,13 +26,6 @@ then
   echo "brew doctor"
   brew doctor
 
-  echo "brew tap"
-  brew tap homebrew/binary
-  brew tap homebrew/x11
-
-  brew install \
-    caskroom/cask/brew-cask
-
   brew cask install \
     java
 
@@ -40,16 +33,13 @@ then
   echo "brew install"
   brew install \
     ansible \
-    docker \
-    docker-compose \
-    docker-machine \
-    docker-swarm \
     gibo \
     git \
     gradle \
-    maven \
-    mono \
-    packer \
+    node \
+    nvm \
+    perl \
+    python \
     reattach-to-user-namespace \
     tmux \
     tree \
@@ -59,33 +49,25 @@ then
   # Install homebrew casks
   echo "brew cask install"
   brew cask install \
-    airvpn \
     atom \
-    bittorrent-sync \
-    chromecast \
-    dash \
+    datagrip \
+    docker \
     firefox \
-    flux \
-    gitter \
     google-chrome \
     intellij-idea \
     iterm2 \
-    keepassx \
     keepingyouawake \
     libreoffice \
     lighttable \
-    limechat \
     openemu \
-    origin \
-    qbittorrent \
+    pycharm \
+    rubymine \
     sizeup \
     slack \
     spotify \
-    steam \
     tcl \
     vagrant \
     virtualbox \
-    vlc \
     xquartz
 
   # Dependencies on brew cask install

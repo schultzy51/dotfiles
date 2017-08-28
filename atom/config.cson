@@ -1,6 +1,7 @@
 "*":
   core:
     audioBeep: false
+    telemetryConsent: "no"
   editor:
     fontSize: 10
     invisibles: {}
