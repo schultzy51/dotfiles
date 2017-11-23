@@ -48,7 +48,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(atom brew docker gem git gitfast gradle osx pip python rvm tmux vagrant)
+plugins=(atom brew docker fasd gem git gitfast gradle osx pip python rvm tmux vagrant)
 
 # User configuration
 
