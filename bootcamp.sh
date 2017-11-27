@@ -33,6 +33,7 @@ then
   echo "brew install"
   brew install \
     ansible \
+    fasd \
     gibo \
     git \
     gradle \
