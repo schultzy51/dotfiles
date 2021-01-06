@@ -3,7 +3,6 @@
     audioBeep: false
     telemetryConsent: "no"
   editor:
-    fontSize: 11
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true

@@ -42,6 +42,7 @@ then
     perl \
     python \
     reattach-to-user-namespace \
+    ruby \
     tmux \
     tree \
     zsh \
@@ -57,24 +58,19 @@ then
     google-chrome \
     intellij-idea \
     iterm2 \
-    keepingyouawake \
+    lastpass \
     libreoffice \
     lighttable \
+    meld \
     openemu \
     pycharm \
+    rectangle \
     rubymine \
-    sizeup \
     slack \
     spotify \
     tcl \
     vagrant \
-    virtualbox \
-    xquartz
-
-  # Dependencies on brew cask install
-  echo "brew install again"
-  brew install \
-    meld
+    virtualbox
 
   echo "brew update"
   brew update

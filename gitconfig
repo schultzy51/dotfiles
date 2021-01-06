@@ -20,3 +20,5 @@
     co = checkout
     df = diff
     st = status
+[gui]
+	tabsize = 4

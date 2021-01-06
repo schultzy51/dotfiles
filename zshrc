@@ -9,6 +9,7 @@ ZSH_THEME="powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_DELIMITER=".."
+DEFAULT_USER=`whoami`
 
 # Used by the tmux plugin
 ZSH_TMUX_AUTOSTART="true"
@@ -51,7 +52,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(atom brew docker fasd gem git gitfast gradle osx pip python rvm tmux vagrant)
+plugins=(brew docker fasd gem git gitfast gradle osx pip python rvm tmux vagrant)
 
 # User configuration
 
