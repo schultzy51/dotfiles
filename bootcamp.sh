@@ -26,51 +26,66 @@ then
   echo "brew doctor"
   brew doctor
 
-  brew cask install \
-    java
-
-  # Install homebrew packages
-  echo "brew install"
+  echo "brew install languages"
   brew install \
-    ansible \
-    fasd \
-    gibo \
-    git \
-    gradle \
+    java \
     node \
-    nvm \
     perl \
     python \
+    ruby
+
+  echo "brew install git tools"
+  brew install \
+    gibo \
+    git \
+    git-gui
+
+  echo "brew install build tools"
+  brew install \
+    gradle \
+    nvm
+
+  echo "brew install other"
+  brew install \
+    fasd \
     reattach-to-user-namespace \
-    ruby \
     tmux \
     tree \
     zsh \
     wget
 
-  # Install homebrew casks
-  echo "brew cask install"
-  brew cask install \
-    atom \
+  echo "brew install jetbrains tools"
+  brew install \
     datagrip \
-    docker \
-    firefox \
-    google-chrome \
     intellij-idea \
+    pycharm \
+    rubymine
+
+  echo "brew install editing tools"
+  brew install \
+    atom \
     iterm2 \
+    meld \
+
+  echo "brew cask install browsers"
+  brew install \
+    firefox \
+    google-chrome
+
+  echo "brew cask install vm tools"
+  brew install \
+    docker \
+    virtualbox
+
+  echo "brew cask install other"
+  brew install \
     lastpass \
     libreoffice \
     lighttable \
-    meld \
     openemu \
-    pycharm \
     rectangle \
-    rubymine \
     slack \
-    spotify \
-    tcl \
-    vagrant \
-    virtualbox
+    spotify
 
   echo "brew update"
   brew update
@@ -99,11 +114,6 @@ then
       mkdir -p ~/Workspace/repos/github/schultzy51
     fi
   fi
-
-  # Install cpan dependencies
-  echo "install Crypt::HSXKPasswd"
-  cpan Crypt::HSXKPasswd
-
 else
   echo "Unsupported OS! (for now)"
 fi

@@ -20,7 +20,7 @@ hardware_uuid=$(system_profiler SPHardwareDataType | awk '/UUID/ { print $3; }')
 sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool false
+#defaults write com.apple.universalaccess reduceTransparency -bool false
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.780400 0.815700 0.858800"
@@ -271,8 +271,8 @@ defaults write com.apple.terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
 
 # Set iTerm2 Font Size
-/usr/libexec/PlistBuddy -c "Set :New\ Bookmarks:0:Normal\ Font Monaco\ 10" ~/Library/Preferences/com.googlecode.iterm2.plist
-/usr/libexec/PlistBuddy -c "Set :New\ Bookmarks:0:Non\ Ascii\ Font Monaco\ 10" ~/Library/Preferences/com.googlecode.iterm2.plist
+#/usr/libexec/PlistBuddy -c "Set :New\ Bookmarks:0:Normal\ Font Monaco\ 10" ~/Library/Preferences/com.googlecode.iterm2.plist
+#/usr/libexec/PlistBuddy -c "Set :New\ Bookmarks:0:Non\ Ascii\ Font Monaco\ 10" ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
