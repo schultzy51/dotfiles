@@ -11,7 +11,6 @@ FILES="
   gitignore
   oh-my-zsh
   tmux.conf
-  tmuxinator
   vim
   vimrc
   zshrc

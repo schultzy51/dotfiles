@@ -96,16 +96,6 @@ then
   echo "brew cleanup"
   brew cleanup
 
-  # TODO: install rvm or rbenv and remove sudo
-  if [ ! $(which tmuxinator) ]
-  then
-    echo "Installing gems"
-    sudo gem install tmuxinator
-  else
-    echo "Updating gems"
-    sudo gem update
-  fi
-
   if [ -e /Volumes/Workspace ]
   then
     if [ ! -e ~/Workspace ]
