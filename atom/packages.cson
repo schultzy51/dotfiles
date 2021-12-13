@@ -1,8 +1,0 @@
-packages: [
-  "auto-detect-indentation"
-  "autocomplete-python"
-  "language-lisp"
-  "package-sync"
-  "react"
-  "split-diff"
-]

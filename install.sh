@@ -6,7 +6,6 @@
 
 CURRENT_DIRECTORY="$( cd "$( dirname "$0" )" && pwd )"
 FILES="
-  atom
   bash_profile
   gitconfig
   gitignore
