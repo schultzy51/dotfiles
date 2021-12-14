@@ -48,7 +48,6 @@ then
   echo "brew install other"
   brew install \
     fasd \
-    reattach-to-user-namespace \
     tmux \
     tree \
     zsh \
@@ -81,8 +80,6 @@ then
   brew install \
     lastpass \
     libreoffice \
-    lighttable \
-    openemu \
     rectangle \
     slack \
     spotify
