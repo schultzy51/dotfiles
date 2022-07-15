@@ -101,3 +101,13 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias giboconfig="gibo dump Gradle Java Node Python Rails Ruby JetBrains Linux macOS Vim > .gitignore"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export DISABLE_SPRING=1
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export PGUSER=cmm
+export PGDATABASE=cmm_development
+export PGHOST=localhost
